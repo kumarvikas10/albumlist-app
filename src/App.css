@@ -1,38 +1,226 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #8a2be2;
+    padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.app-spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d6d6d6;
+  border-radius: 50%;
+  border-top-color: #6200ee;
+  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  margin-right: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes spin {
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.heading{
+  padding: 2rem;
+  color: #fff;
+}
+
+.heading span{
+  font-size: 3rem;
+  font-family: 'Blaka', cursive;
+}
+
+.heading img{
+  padding-right: 5px;
+  width: 40px;
+  height: 40px;
+}
+.Album-list {
+  background: #e8e8e8;
+  border-radius: 4px;
+  width: 90%;
+  padding: 5px;
+}
+
+.Album {
+  align-items: center;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+
+.titleBox{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.title{
+  padding: 10px;
+  word-wrap: break-word;
+  text-align: justify;
+  overflow: hidden;
+
+}
+
+.btn{
+  margin-right: 2px;
+  color: #fff;
+  cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.form{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.input{
+  width: 100%;
+  margin: 5px;
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgb(248, 248, 248); */
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  padding: 10px;
+  margin-right: 7px;
+} 
+
+.inputAlbum{
+  width: 60%;
+  margin: 5px;
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgb(248, 248, 248); */
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  padding: 10px;
+  margin-right: 7px;
+} 
+
+input[type=text] {
+  /* width: 100%; */
+  /* padding: 12px 20px; */
+  /* margin: 8px 0; */
+  border: 2px solid #8a2be2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.submitbtn{
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+    display: flex;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.submitbtn img{
+  display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.buttons{
+  display: flex;
+}
+
+.editbtn{
+  display: flex;
+  cursor: pointer;
+    font-size: 1.4rem;
+    padding-right: 5px;
+    color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.editbtn img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width:25px;
+}
+
+.savebtn{
+  cursor: pointer;
+    font-size: 1.4rem;
+    padding-right: 5px;
+    color: yellowgreen;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-compact-disc{
+    font-size: 1.4rem;
+    padding-right: 5px;
+    color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.deletebtn{
+  cursor: pointer;
+    font-size: 1.4rem;
+    padding-right: 5px;
+    color: red;
+    justify-content: center;
+    align-items: center;
 }
