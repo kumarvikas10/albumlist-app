@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/albumlist-app/static/css/main.6804792c.css",
+    "main.js": "/albumlist-app/static/js/main.59e7ef81.js",
+    "index.html": "/albumlist-app/index.html",
+    "main.6804792c.css.map": "/albumlist-app/static/css/main.6804792c.css.map",
+    "main.59e7ef81.js.map": "/albumlist-app/static/js/main.59e7ef81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6804792c.css",
+    "static/js/main.59e7ef81.js"
+  ]
+}
